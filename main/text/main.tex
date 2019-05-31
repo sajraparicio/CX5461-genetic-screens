@@ -32,6 +32,8 @@
 \usepackage{fancyhdr}
 \usepackage{svg}
 \usepackage{chemformula}  %adds chemical formulas package \ch command
+\usepackage{longtable}
+
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
 \fancyfoot[R]{\bfseries \thepage} % except the center
@@ -47,7 +49,7 @@
 
 %Ubiquitin DNA damage response pathway is synthetically lethal with G-quadruplex stabilisers
 
-\author{Tehmina Masud$^{1,2}$,Charles Soong$^{1,2}$, Hong Xu$^{1,2}$, Justina Biele$^{1}$, Saelin Bjornson$^{1}$, Steven McKinney$^{1}$, Samuel Aparicio$^{1,2,7}$}
+\author{Tehmina Masud$^{1,2}$,Charles Soong$^{1,2}$, Hong Xu$^{1,2}$, Justina Biele$^{1}$, Saelin Bjornson$^{1}$, Steven McKinney$^{1}$, Samuel Aparicio$^{1,2,3}$}
 
 \begin{document}
 
@@ -81,6 +83,9 @@
 \subfile{discussion}
 
 \newpage
+\subfile{acknowledgements_contributions.tex}
+
+\newpage
 \subfile{figures}
 
 \newpage
@@ -90,9 +95,18 @@
 
 \newpage
 \textbf{References}
-\bibliographystyle{naturemag}
+\bibliographystyle{naturemag_noURL}
 \bibliography{paper_CX5461_screen}
 
 \subfile{supplement/text/supplement}
+\subfile{supplement/text/supplement_tables}
 
 \end{document}
+
+
+
+
+
+
+
+

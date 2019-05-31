@@ -1,0 +1,29 @@
+Dear X
+
+We are submitting the manuscript titled "Targeting of DNA damage response-associated ubiquitination sensitizes cancer cells to G-quadruplex stabilizers" for publication.
+
+The significance of our work is that it identifies the requirement of the regulatory ubiquitin signaling pathway for the sensing/repairing of G-quadruplex (G4)-associated DNA damage. This finding is pertinent to the clinical phase 1 compound CX-5461 (and a tool compound, pyridostatin, of a different structural class). We previously showed in 2017 that CX-5461 binds and stabilizes DNA G4-structures resulting in replication-associated DNA damage at G4 sites; defective DNA repair via homologous recombination (HR) sensitizes cancer cells to CX-5461. CX-5461 is currently in phase 1 clinical trial to determine the therapeutic effect in patients with HR repair defects (patients with BRCA1/2 mutated tumors). Our new findings have a potential translational significance of further expanding the range of solid tumors responsive to CX-5461. 
+
+The novelty of the current manuscript is that we are the first to demonstrate that loss of function of the DNA damage response (DDR)-associated chromatin ubiquitination pathway results in increased sensitivity of cancer cells to G4-stabilizing drugs. We arrive at this conclusion by performing a sub-genomic depletion screen with CRISPR-Cas9-mediated targeting of 480 genes, using multiple G4-binding drugs including CX-5461. We identified, in addition to the expected members of the HR pathway, novel gene-drug interactions with factors responsible for DDR-associated ubiquitin signaling. We re-validated these findings in additional cell lines using multiple methods. In addition, we showed that CX-54651 treatment induces ubiquitin signaling in nuclei; conjugated ubiquitin co-localises with DNA G4 structures and G4-associated DNA damage. Moreover, inhibitors of the relevant E2-conjugating enzyme act synergistically with CX-5461-induced G4-stabilization suggesting the potential for combination therapy with CX-5461. In short, to our knowledge, G4-associated DNA damage has not been linked previously to the DDR-ubiquitin pathway.
+
+We suggest the following as potential reviewers based on their expertise in the field and no conflicts as far as we know:
+
+Laurence Hurley (expert on G4 chemistry), hurley@pharmacy.arizona.edu 
+Jeffrey Trent (expert on translational biomarkers), TGen, Phoenix, Arizona, jtrent@tgen.org
+Daniel Von Hoff (clinical expert on G4 clinical trials), dvh@tgen.org
+Simon Powell (radiation biologist, expert on DDR), powells@mskcc.org
+
+We ask that you kindly don't send the manuscript to the following individuals or their groups as we believe there are severe differences of opinion or overlapping interests that might preclude a fair review:
+
+Denis Drygin
+Ross Hannan (Peter MacCallum Cancer Centre)
+Madalena Tarsounas (University of Oxford)
+Sven Rottenberg (University of Bern)
+
+
+Yours etc.
+
+
+
+
+

@@ -2,7 +2,7 @@
 
 \subsection{Generation and optimization of subgenomic CRISPR-Cas9 library and screens.}
 In order to identify new genetic interactions with CX-5461, with a focus on genome maintenance-related factors, a pooled subgenomic single guide RNA (sgRNA) library was generated (Figure~\ref{fig:drug-screen}a). 
-This library comprised of 480 genes corresponding to DNA damage sensing, DNA repair, DNA replication, cell cycle checkpoints, chromosome segregation, and chromosome structure and remodeling, including a set of positive control or essential genes (Table~\ref{table:library-design} and Supplementary Data)\cite{Croft2014,Fabregat2016,Espeseth2011,Kanehisa2000}. 
+This library comprised of 480 genes corresponding to DNA damage sensing, DNA repair, DNA replication, cell cycle checkpoints, chromosome segregation, and chromosome structure and remodeling, as well as a set of positive control or essential genes (Table~\ref{table:library-design} and Supplementary Data)\cite{Croft2014,Fabregat2016,Espeseth2011,Kanehisa2000}. 
 Since CX-5461 also inhibits RNA polymerase I complex-mediated transcription of rRNA, we included POLR1A, POLR1B, UBTF, RRN3, and TAF1A genes to represent gene expression (transcription) pathway. 
 The library contained a total of 2930 sgRNAS with 6 sgRNAs targeting each gene and 50 non-targeting sgRNAs (NT-sgRNAs)  (Supplementary Data). 
 We used sgRNAs designed for human GeCKO v2 library and subcloned pooled oligonucleotides into lentiCRISPRv2 (LCV2) vector with puromycin selection\cite{Sanjana2014}. 
@@ -14,60 +14,61 @@ Cells were transduced at a low MOI of 0.3 and subjected to puromycin selection f
 A fraction of cells was harvested every three days until day 19 for sgRNA representation analysis by next-generation sequencing. 
 sgRNA abundance and statistical analyses were performed using CaRpools and MaGeCk\cite{Winter2016,Li2014}.
 
-When compared to sgRNA abundance on day 1 (pre-puromycin selection), we did not observe any remarkable difference in gene depletion on day 19 between populations treated with puromycin for 3 days or 6-days (Supplementary Figure~\ref{sfig:dropout-screen}c; Pearson; $R=0.87$, P-value$<$0.001), thus prompting us to apply only 3 days of puromycin selection for the drug screens. 
+When compared to sgRNA abundance on day 1 (pre-puromycin selection), we did not observe any remarkable difference in gene depletion on day 19 between populations treated with puromycin for 3 days or 6-days (Supplementary Figure~\ref{sfig:dropout-screen}c; Pearson; $R=0.87$), thus prompting us to apply only 3 days of puromycin selection for the drug screens. 
 In addition, the abundance of NT-sgRNAs did not change as compared to the initial pool irrespective of the duration of puromycin selection (Supplementary Figure~\ref{sfig:dropout-screen}c), and in independent dropout screens (Supplementary Figure~\ref{sfig:dropout-screen}d). 
-In comparison, gene depletion (negative P-value of $<$0.05) was observed after 3 days of puromycin selection (Supplementary Figure~\ref{sfig:dropout-screen}e). 
-By day 19, over 10\% of the genes for cell populations undergoing 3-days puromycin selection showed significant dropout with reference to either day 1 (pre-selection) or day 4 (post-selection). 
+In comparison, gene depletion (p-value of $<$0.05) was observed after 3 days of puromycin selection (Supplementary Figure~\ref{sfig:dropout-screen}e). 
+By day 19, over 10\% of the genes for cell populations undergoing 3-days puromycin selection showed significant dropout with reference to either day 1 (pre-selection) (Supplementary Figure~\ref{sfig:dropout-screen}e) or day 4 (post-selection) (data not shown). 
 The top depleted genes included POLR2I, GAPDH, ANAPC5. Of the top 10\% of depleted genes in our screens, almost 92\% genes were fitness genes, with 38 out of 48 genes previously described as core fitness genes and 6 as HCT116 cell line-dependent fitness genes (Supplementary Table~\ref{table:fitness_genes})\cite{Hart2015}.
 
 Together, these results show that the subgenomic dropout screens were able to detect essential genes dropout, with high sensitivity and reproducibility, without a significant perturbation in the NT-sgRNA pools, thus providing a platform to perform focused functional genetic screens with drugs. 
 
 \subsection{Dropout screens to identify genetic vulnerabilities that increase sensitivity to G4-stabilizing drugs.}
-Next, to characterize the factors loss of which confer sensitivity to G4 drugs in cancer cells, we performed the dropout screens in HCT116 cells with various drugs (Figure~\ref{fig:drug-screen}a, b). 
-To enhance the sensitivity of the screens, and control for chemical scaffold specific off target effects, cells were treated with two G4 drugs of completely different structural classes, pyridostatin (PDS) and CX-5461, at two pre-determined inhibitory concentrations (IC) for each drug (IC$_{50}$, the half-maximal inhibitory concentration and IC$_{30}$). 
-Since CX-5461 (but not PDS) has some RNApol1 inhibitory effects at higher concentrations than is required for G4 stabilization\cite{Xu2017}, cells were also treated in parallel with BMH-21 (an RNA polymerase I inhibitor, but non-G4 stabilizer of a different structural class to PDS and CX5461), at IC$_{30}$, to exclude gene interactions relevant to RNA polymerase I inhibition. 
-The drug treatments were started in triplicates, at day 5 after transduction and continued for a total of 14 days. 
-Cells were also harvested intermittently at days 7 and 10 of the treatment, and sgRNA representation analysis was done as described for the dropout screens (Supplemental Data).  
+Next, to characterize the factors loss of which confers sensitivity to G4 drugs in cancer cells, we performed the dropout screens in HCT116 cells with various drugs (Figure~\ref{fig:drug-screen}b). 
+To enhance the sensitivity of the screens, and to control for chemical scaffold-specific off-target effects, cells were treated with two G4 drugs of completely different structural classes, pyridostatin (PDS) and CX-5461, at two pre-determined inhibitory concentrations (IC) for each drug (IC$_{50}$, the half-maximal inhibitory concentration and IC$_{30}$). 
+Since CX-5461 (but not PDS) has some off-target RNA polymerase I inhibitory activity at high concentrations\cite{Xu2017}, cells were also treated in parallel with BMH-21, an RNA polymerase I inhibitor, which binds GC rich DNA but is not a DNA G4 stabilizer at IC$_{30}$, to identify and exclude gene-drug fitness effects resulting from RNA polymerase I inhibition.
+We have previously shown that BMH-21 does not induce DNA damage in epithelial cells and despite inhibiting RNA polymerase I it does not exhibit synthetic lethality with HR deficiency.
+The drug treatments were started in triplicates on day 5 after transduction and continued for a total of 14 days. 
+Cells were also harvested intermittently at days 7 and 10 of the treatment, and sgRNA representation analysis was done as described for the dropout screens (Supplementary Data).  
 
 By consolidating the most depleted genes from different treatment groups of CX-5461 and PDS, and excluding those that were shared with the top hits from the BMH21 screen, we identified the genetic vulnerabilities specific to the G4 interacting drugs. 
-First, for each treatment condition, the negative depletion scores and negative p-values were calculated using MAGeCK at day 19 relative to vehicle (Supplemental Data). 
+First, for each treatment condition, the negative depletion scores and negative p-values were calculated using MAGeCK at day 19 relative to vehicle (Supplementary Data). 
 The MAGeCK depletion scores represented the RRA (robust rank aggregation) values of the individual genes in negative selection, taking into account the performance of the 6 individual sgRNAs per gene. 
 Top depleted genes for each condition, ranked by the depletion scores, were then consolidated together to form a final list comprising of 81 genes (Table~\ref{table:81-genes list}). 
 The depletion scores for each treatment condition were ordered according to the scores of CX-5461 treatment group at IC$_{50}$ (Figure~\ref{fig:drug-screen}c). 
 Apart from PDS-IC$_{50}$, many of the top depleted genes were shared between CX-5461 and PDS, but not BMH-21. 
 
 As validation of the screen data, we assessed the performance of individual sgRNAs in the top depleted genes of interest (Supplementary Figure~\ref{sfig:sgrna_boxplots}). 
-It was evident that not all sgRNAs targeting the same gene depleted in a similar manner. 
+It was evident that not all sgRNAs targeting the same gene were depleted in a similar manner. 
 As an example, for LIG4, we observed that two of the sgRNAs led to the enrichment of the respective cell populations across all treatment groups, including BMH-21. MAGeCK assessed the relative enrichment or depletion of individual sgRNAs. 
 For LIG4, MAGeCK determined that 2 of the sgRNAs were enriched, with a positive fold-change, while the other 4 were depleted. 
-The inefficient cutting of sgRNAs have been cited by other groups\cite{Doench2014,Doench2018}, illustrating the importance of methods such as MAGeCK to first measure the performance of individual sgRNAs before deriving a gene-based ranking.
+The inefficient cutting of sgRNAs have been cited by other groups\cite{Doench2014,Doench2017}, illustrating the importance of methods such as MAGeCK to first measure the performance of individual sgRNAs before deriving a gene-based ranking.
 
 Figure~\ref{fig:drug-screen}d represents the overlap of top gene hits between different treatment groups. 
 Candidates of interest included genes that were exclusively shared between different CX-5461 and PDS treatment groups. 
 Hits that were in common with BMH-21 treatment group, including RAD9A and RAD51, were excluded from future analysis as they likely represent genes that are not involved purely in G4 stabilization. 
-The final list comprised of 58 genes and included genes known to be involved in G4 resolution, such as BRCA2 and REV1, and as expected multiple members of the HRD pathway were identified. 
+The final list comprised of 58 genes and included genes known to be involved in G4 resolution, such as BRCA2 and REV1, and, as expected, multiple members of the HR pathway such as RAD54L, RAD52, PALB2, RAD51B. 
 We also observed genes whose homologs were previously identified in screens performed in C. elegans (ATM, MUS81, POLQ)\cite{Xu2017}. Gene hits common to all CX-5461 and PDS treatment conditions included RAD54L, H2AFX, POLQ, ATM, LIG4, and RNF168.
 
-To identify pathways and ontologies specific to G4 stabilization, KEGG pathway and Gene Ontology (GO) enrichment analysis for gene hits was performed on the 58 genes list (Table~\ref{table:81-genes list}, CX-5461 and PDS treatments) using Enrichr (Figure~\ref{fig:drug-screen}e, Supplementary Figure~\ref{sfig:bmh21_enrichr} and Supplemental Data)\cite{Chen2013,Kuleshov2016}. 
+To identify pathways and ontologies specific to G4 stabilization, KEGG pathway and Gene Ontology (GO) enrichment analysis for gene hits was performed on the 58 genes list (Table~\ref{table:81-genes list}, CX-5461 and PDS treatments) using Enrichr (Figure~\ref{fig:drug-screen}e and Supplementary Data)\cite{Chen2013,Kuleshov2016}. 
 Each gene was assigned a weight/membership value based on the number of conditions in which the gene was represented. 
 The top enriched pathways included homologous recombination, Fanconi Anemia  and Non-homologous end-joining (NHEJ) (category: KEGG Pathways) which have previously been shown to be involved in G4 resolution\cite{Sarkies2012,Piazza2010a,Paeschke2011a,Paeschke2013,Jimeno2018,Mendoza2016a,Eddy2014,Zimmer2015,Xu2017}, confirming the efficacy of the screen. 
 Among the novel pathways identified, nuclear ubiquitin ligase complex (GO Cellular Component 2015, GO:0000152), ubiquitin binding (GO Molecular Function 2015, GO:0043130), DNA-directed DNA polymerase activity (GO Molecular Function 2015, GO:0003887) and DNA polymerase activity (GO Molecular Function 2015, GO:0034061) were also found to be enriched.
-In contrast, prominent pathways and ontologies specific to BMH-21 (19 gene hits unique to the BMH-21 treatment group) included GO Biological Processes transcription-coupled nucleotide-excision repair (GO:0006283), DNA replication (GO:0006260) and GO Cellular Component such as DNA-directed RNA polymerase, core complex (GO:0005665) (Supplementary Figure~\ref{fig:drug-screen}a). 
+In contrast, prominent pathways and ontologies specific to BMH-21 (19 gene hits unique to the BMH-21 treatment group) included GO Biological Processes transcription-coupled nucleotide-excision repair (GO:0006283), DNA replication (GO:0006260) and GO Cellular Component such as DNA-directed RNA polymerase, core complex (GO:0005665) (Supplementary Figure~\ref{sfig:bmh21_enrichr}). 
 
 Next, we searched for cancer-related alterations in our top candidate genes using the cBioPortal for Cancer Genomics database\cite{Cerami2012,Gao2013}. 
 Most of these genes are mutated in many types of cancers (Supplementary Figure~\ref{sfig:cbioportal}). 
 Although all cancer types with loss of function or decreased gene expression of these genes could potentially benefit from CX-5461 therapy, we decided to focus on genes that could also serve as therapeutic targets. 
 We searched for the druggability of the top hits from the screen using the Drug Gene Interaction Database (DGIdb) and found four genes that are predicted to interact with drugs: ATM, ATR, UBE2N, and PSMB4. 
 %We decided not to pursue ATM and ATR genes as ATM/ATR pathway has been shown to be activated by CX-5461 in acute lymphoblastic leukemia cells\cite{Negi2015}. ATR inhibition enhances CX-5461-associated apoptosis in these cells. 
-UBE2N along with RNF168 is involved in DNA damage response-related ubiquitin signaling, and this pathway is frequently altered in cancers. 
-These alterations are accompanied by an associated increase (in case of amplification) or decrease (in case of deletion) in mRNA expression (Figure~\ref{fig:genetic-validation}a and Supplementary Figure~\ref{sfig:cbioportal}).
+UBE2N, along with RNF168, is involved in DNA damage response-related ubiquitin signaling, and this pathway is frequently altered in cancers (Figure~\ref{fig:genetic-validation}a and Supplementary Figure~\ref{sfig:cbioportal}). 
+These alterations are accompanied by an associated increase (in case of amplification) or decrease (in case of deletion) in mRNA expression.
 
-Taken together the data show enrichment for multiple members of the HR pathway, as anticipated from previous mechanistic studies, confirming the biological sensitivity of the screen, plus several additional pathways, including notably several members of the ubiquitin DNA damage sensing pathway, that we followed up further.
+Taken together the data show enrichment for multiple members of the HR pathway, as anticipated from previous mechanistic studies, confirming the biological sensitivity of the screen, plus several additional pathways, including notably two key members of the ubiquitin DNA damage sensing pathway, that we followed up further.
 
 \subsection{Re-validation of UBE2N, RNF168, MMS22L and MUS81 in growth competition assays.}
-In order to re-validate the results of the drug dropout screens, we selected four genes: UBE2N and RNF168 representing the DNA damage response associated ubiquitin signaling pathway, MUS81 which is a DNA structure-specific endonuclease, and MMS22L which localizes to replication forks, as MMS22L-TONSL heterodimer, especially during replication stress\cite{Piwko2016} to be examined individually using competitive growth assays (CGA) (Figure~\ref{fig:genetic-validation}a).
+In order to re-validate the results of the drug dropout screens, we selected four genes: UBE2N and RNF168 representing the DNA damage response-associated ubiquitin signaling pathway, MUS81 which is a DNA structure-specific endonuclease, and MMS22L which localizes to replication forks, as MMS22L-TONSL heterodimer, especially during replication stress\cite{Piwko2016} to be examined individually using competitive growth assays (CGA) (Figure~\ref{fig:genetic-validation}b).
 Growth competitions assays provide a quantitative and robust method for determining fitness effects of drug-gene interactions.
-We also included an NT-sgRNA, NT5. Individual sgRNAs included those used in the library as well as new sgRNAs targeting the genes of interest(design described in methods). 
+We also included an NT-sgRNA, NT5. Individual sgRNAs included those used in the library as well as new sgRNAs targeting the genes of interest (design described in methods). 
 HCT116 cells were transduced with three individual sgRNAs representing each gene. 
 Transduced cells, as determined by the expression of red fluorescence (DRX2), were isolated using flow cytometry and mixed with non-transduced cells. 
 When cells were mixed in equal proportions, we observed depletion of transduced cells, irrespective of genotypes, over time by flow analysis performed on days 4, 7 and 11 after transduction, suggesting that the process of transduction affects the growth of cells (Supplementary Figure~\ref{sfig:validation}a). 
@@ -76,13 +77,13 @@ In further validation, immunoblotting showed the efficacy of selected sgRNAs tar
 
 Mixed cell populations were treated with CX-5461, PDS and BMH-21 for 7 days at both IC$_{50}$ and IC$_{30}$ for PDS and CX-5461, and at IC$_{30}$ for BMH-21. 
 At the end of the treatment, flow analysis was performed to determine the proportion of cells expressing DRX2. 
-The individual drug treatments alone did not result in a decrease of DRX2-expressing cell populations for sgNT5 (Figure~\ref{fig:genetic-validation}b, Supplementary Figure~\ref{sfig:validation}b, and Supplementary Figure~\ref{sfig:validationCI}). 
-In comparison, with UBE2N targeting, CX-5461-IC$_{30}$ and -IC$_{50}$ treatments consistently showed a decrease in DRX2-expressing cell populations (confidence interval (CI)$<$0) for all sgRNAs, relative to the vehicle. 
-PDS-IC$_{30}$ and -IC$_{50}$ treatment also resulted in reduced competition assay fitness for the three sgRNA, although the magnite of the effect was smaller than for CX5461.
-BMH-21 which shows no decrease at all in fitness in the competition assay.
+The individual drug treatments alone did not result in a decrease of DRX2-expressing (DRX2+) cell populations for sgNT5 (Figure~\ref{fig:genetic-validation}c, Supplementary Figures~\ref{sfig:validation}b and ~\ref{sfig:validationCI}). 
+In comparison, with UBE2N targeting, CX-5461-IC$_{30}$ and -IC$_{50}$ treatments consistently showed a decrease in DRX2+ cell populations (confidence interval (CI)$<$0) for all sgRNAs, relative to the vehicle. 
+PDS-IC$_{30}$ and -IC$_{50}$ treatments also resulted in reduced fitness for the three sgRNAs, although the magnitude of the effect was smaller than that for CX5461 treatment.
+In contrast, BMH-21 treatment showed no decrease at all in the fitness of DRX2+ cells.
 The quantitative variations observed also mirror the efficiency of sgRNAs, with sgUBE2N.1 resulting in the greatest knockout effect compared with other sgRNAs (Supplementary Figure~\ref{sfig:validation}c).
-For RNF168, CX-5461 (IC$_{30}$ and IC$_{50}$), PDS-IC$_{30}$ and BMH-21 all showed a decrease in competitive fitness, with the effect being much strong with CX-5461 and PDS than with BMH-21. 
-For MUS81 and MMS22L.3, only CX-5461-IC$_{30}$ showed a consistent decrease competitive fitness effect.
+For RNF168, CX-5461 (IC$_{30}$ and IC$_{50}$), PDS-IC$_{30}$ and BMH-21 all showed a decrease in competitive fitness, with the effect being much stronger with CX-5461 and PDS than with BMH-21 (Figure~\ref{fig:genetic-validation}c, Supplementary Figures~\ref{sfig:validation}b and ~\ref{sfig:validationCI}). 
+For MUS81 and MMS22L.3, only CX-5461-IC$_{30}$ showed a consistent decrease in competitive fitness effect.
 
 Interestingly, in further experiments, we did not observe any drug-related sensitized phenotype in a MUS81-deficient HCT116 cell line (Supplementary Figure~\ref{sfig:mus81cells}), indicating that MUS81 might be a false positive or not have a strong drug interaction. 
 Its also possible that cells adapt rapidly to Mus81 loss and stable knockouts already have escape mechanisms. 
@@ -90,7 +91,7 @@ Altogether, our findings were in agreement with our screen results with the stro
 
 \subsection{Selective sensitivity to G4-stabilizing drugs in multiple cancer cell lines upon UBE2N depletion.}
 Next, we characterized the dose kinetics of CX-5461, PDS and BMH-21 in human cancer cell lines upon UBE2N depletion using WST-1 cell proliferation assay. 
-Utilizing a previously characterized UBE2N knockout (UBE2N-/-) HCT116 cell line\cite{Thorslund2015}, we observed that UBE2N-/- cells were more sensitive to CX-5461 (IC$_{50}$ of 3.18 nM in UBE2N+/+ vs. 0.24 nM in UBE2N-/-; P-value $<$0.0001) and PDS (IC$_{50}$ of \SI{1.65}{\micro\Molar} in UBE2N+/+ vs. \SI{0.29}{\micro\Molar} in UBE2N-/-; P-value $<$0.0001), and not to BMH-21 (IC$_{50}$ of 33.82 nM in UBE2N+/+ vs. 43 nM in UBE2N-/-; P-value 0.0974), as compared to the UBE2N+/+ cells, further confirming the results of the drug screen (Figure~\ref{fig:genetic-validation}d and Table~\ref{table:IC50}.
+Utilizing a previously characterized UBE2N knockout (UBE2N$^{-/-}$) HCT116 cell line\cite{Thorslund2015}, we observed that UBE2N$^{-/-}$ cells were more sensitive to CX-5461 as compared to the UBE2N$^{+/+}$ cells (IC$_{50}$ of 3.18 nM in UBE2N$^{+/+}$ vs. 0.24 nM in UBE2N$^{-/-}$; P-value $<$0.0001) and PDS (IC$_{50}$ of \SI{1.65}{\micro\Molar} in UBE2N$^{+/+}$ vs. \SI{0.29}{\micro\Molar} in UBE2N$^{-/-}$; P-value $<$0.0001), and not to BMH-21 (IC$_{50}$ of 33.82 nM in UBE2N$^{+/+}$ vs. 43 nM in UBE2N$^{-/-}$; P-value 0.0974) further confirming the results of the drug screen (Figure~\ref{fig:genetic-validation}d and Table~\ref{table:IC50}).
 
 Additionally, CRISPR sgRNA targeting of UBE2N in breast cancer cell line MDA-MB-231, using three different sgRNAs, revealed similar sensitivities to CX-5461 and PDS (Figure~\ref{fig:genetic-validation}d and Table~\ref{table:IC50}). UBE2N-targeted cells exhibited selective sensitivity, as compared to cells containing a non-targeting sgRNA (sgNT40), to CX-5461 (IC$_{50}$ of 8.71 nM (sgNT40) vs. 0.8 nM (sgUBE2N.1), 2.24 nM (sgUBE2N.2) and 1.85 nM (sgUBE2N.3); P-values $<$0.0001). 
 PDS-treatment also conferred selective cytotoxicity upon UBE2N-targeting albeit with a milder phenotype (IC$_{50}$ of \SI{0.25}{\micro\Molar} (sgNT40) vs. \SI{0.09}{\micro\Molar} (sgUBE2N.1), \SI{0.1}{\micro\Molar} (sgUBE2N.2) and \SI{0.13}{\micro\Molar} (sgUBE2N.3); P-values $<$0.0001, $<$0.0001 and 0.0004, respectively). 
@@ -98,39 +99,37 @@ In comparison, no selective cytotoxicity was observed on BMH-21 treatment in cel
 sgUBE2N.2-targeting of cells significantly increased the IC$_{50}$ as compared to sgNT40-containing cells (IC$_{50}$ of 38.84 nM; P-value 0.0036). 
 These findings suggest that the sensitivity to CX-5461 and PDS upon UBE2N depletion is not HCT116 cell line-specific. 
 
-\subsection{RNF168 and UBE2N-dependent histone ubiqitination at DNA damage and G4 sites after CX-5461 treatment.}
+\subsection{RNF168- and UBE2N-dependent histone ubiqitination at DNA damage and G4 sites after CX-5461 treatment.}
 
-Since RNF168 and UBE2N are jointly involved in marking histones at the sites of damage, we next sought to examine the relationship between CX5461 induced damage, G4 sites and histone ubiquitination as part of the DDR.
-First, since RNF168 is recruited to DNA double strand breaks (DSBs) in UBE2N-RNF8-dependent manner. 
-Since RNF168 targeting increased cellular sensitivity to G4 stabilizers, RNF168 is expected to localize to the sites of DNA damage in response to CX-5461. 
-Therefore, we first examined the induction of RNF168 foci in U2OS cells after CX-5461 treatment using immunofluorescence (Figure~\ref{fig:ubiquitin-signaling}a). 
+Since RNF168 and UBE2N are jointly involved in marking histones at the sites of damage, we next sought to examine the relationship between CX5461-induced DNA damage, G4 sites and histone ubiquitination as part of the DDR.
+Since RNF168 is recruited to DNA double strand breaks (DSBs) in UBE2N/RNF8-dependent manner, we first examined the induction of RNF168 foci in U2OS cells after CX-5461 treatment using immunofluorescence (Figure~\ref{fig:ubiquitin-signaling}a). 
 Indeed, CX-5461-treated cells showed a significant induction of RNF168 foci in approximately 35\% (median) of the nuclei, as compared to less than 10\% in vehicle-treated cells (P-value $<$0.001), indicating that RNF168 is likely to be involved directly in the repair of CX-5461-induced DNA damage.
 
-We next considered ubiquitination since UBE2N and RNF168 promote mono- and poly-ubiquitination at sites of DNA DSBs. 
-To determine if nuclear ubiquitin signaling is triggered in response to CX-5461-induced DNA damage, we examined ubiquitin conjugates at DNA DSBs using an antibody specific for mono- and poly-conjugated ubiquitins (FK2) in nuclei and on chromatin using immunofluorescence and Western blotting, respectively.
+Next, we investigated nuclear ubiquitination since UBE2N and RNF168 promote mono- and poly-ubiquitination at sites of DNA DSBs. 
+To determine if nuclear ubiquitin signaling is triggered in response to CX-5461-induced DNA damage, we examined ubiquitin conjugates at nuclear DNA DSBs using an antibody specific for mono- and poly-conjugated ubiquitin (FK2) and on chromatin, using immunofluorescence and Western blotting, respectively.
 Nuclear FK2 foci were observed in approximately 41\% (P-value$<$0.0001) and 51\%(P-value$<$0.0001) of U2OS cell nuclei after \SI{0.1}{\micro\Molar} CX-5461 treatment for 1 and 4 hours, respectively, as compared to 5\% of vehicle-treated cells (Figure~\ref{fig:ubiquitin-signaling}b). 
 A significant increase in the percentage of cells with nuclear FK2 foci, albeit at a lower proportion than after \SI{0.1}{\micro\Molar} CX-5461, was also observed with \SI{1}{\micro\Molar} CX-5461. Approximately, 37\% (P-value$<$0.05) and 26\%(P-value$<$0.001) of drug-treated cells demonstrated an increase in nuclear FK2 foci after 1 and 4 hours, respectively, as compared to the vehicle treatment. Increase in the percentage of cells with FK2 foci was also observed with PDS treatment (Supplementary Figure~\ref{sfig:ub-signaling}a), suggesting that the DNA damage ubiquitination response is induced by multiple G4-stabilizers of different structural classes.
 
-We further analyzed RNF168/UBE2N-dependent ubiquitination at different time points on acid-extracted histones from CX-5461-treated HCT116 cells by Western blots using FK2 antibody (Figure~\ref{fig:chromatin-ubiquitination}a top panel, Supplementary figure~\ref{sfig:chromatin_ub_westerns}a). 
-CX-5461 treatment at both \SI{0.1}{\micro\Molar} and \SI{1}{\micro\Molar} induced ubiquitination of histones H2A/H2B in UBE2N-wildtype (UBE2N+/+) cells. 
-In contrast, histone ubiquitination was suppressed in the absence of UBE2N, indicating that UBE2N is required for ubiquitination events resulting from CX-5461-induced DNA damage.
+We further analyzed RNF168/UBE2N-dependent ubiquitination at different time points on acid-extracted histones from CX-5461-treated HCT116 cells by Western blots using FK2 antibody (Figure~\ref{fig:chromatin-ubiquitination}a, Supplementary figure~\ref{sfig:chromatin_ub_westerns}a). 
+We observed a trend of 1.5- to 1.9-fold increase in mean FK2 intensity, albeit with wide confidence intervals, at bands corresponding to ubiquitination of histones H2A/H2B after 3 and 5 hours of \SI{1}{\micro\Molar} CX-5461 treatment in \textit{UBE2N$^{+/+}$} cells, as compared to the vehicle treatment (Figure~\ref{fig:chromatin-ubiquitination}a and b). Although not statistically different (see methods), such differences do not appear to be so small as not to be biologically relevant. 
+Furthermore, the histone ubiquitination was suppressed in the absence of UBE2N after 3 and 5 hours of treatment at \SI{1}{\micro\Molar} and \SI{0.1}{\micro\Molar}, indicating that UBE2N is required for ubiquitination events resulting from CX-5461-induced DNA damage (Figure~\ref{fig:chromatin-ubiquitination}a, Supplementary figure~\ref{sfig:chromatin_ub_westerns}c).
 
-To determine if conjugated ubiquitin was indeed accumulating at the sites of DNA damage following CX-5461 exposure, we examined colocalization of FK2 foci with well-characterized markers of DNA DSBs, the phosphorylated histone H2AX ($\gamma$H2AX) and 53BP1. $\gamma$H2AX is also important in the chromatin remodeling events during DNA repair. Additionally, RNF168 interacts with and ubiquitinates 53BP1, events crucial for 53BP1 recruitment to DNA damage sites\cite{Fradet-Turcotte2013a}. 
-To this end, we quantified cells with co-localized FK2 and $\gamma$H2AX or 53BP1 foci in U2OS treated with CX-5461 (\SI{0.1}{\micro\Molar}) for 1 hour (Figure~\ref{sfig:ub-signaling}b).[Add numbers]. Discrete $\gamma$H2AX and 53BP1 foci were detected only in cells exposed to CX-5461, and not in vehicle-treated cells, and colocalized with FK2 foci. 
-These findings demonstrate that CX-5461 mediated ubiquitination occurs at chromosome loci with DNA damage.
+To determine if conjugated ubiquitin was indeed accumulating at the sites of DNA damage following CX-5461 exposure, we examined colocalization of FK2 foci with well-characterized markers of DNA DSBs, the phosphorylated histone H2AX ($\gamma$H2AX) and 53BP1. $\gamma$H2AX is also important in the chromatin remodeling events during DNA repair. Additionally, RNF168-mediated ubiquitination of histone H2A at K15 is crucial for 53BP1 recruitment to DNA damage sites\cite{Fradet-Turcotte2013a}. 
+To this end, we quantified cells with co-localized FK2 and $\gamma$H2AX or 53BP1 foci in U2OS cells treated with CX-5461 (\SI{0.1}{\micro\Molar}) for 1 hour (Supplementary Figure~\ref{sfig:ub-signaling}b). Discrete $\gamma$H2AX and 53BP1 foci were detected only in cells exposed to CX-5461 (data not shown), and not in vehicle-treated cells, as previously descibed\cite{Xu2017}. Over 80\% of FK2 foci also co-stained with $\gamma$H2AX after CX-5461 treatment, as compared to 25\% after vehicle treatment (P-value $<$0.01) (Supplementary Figure~\ref{sfig:ub-signaling}b). Although we did not observe significantly different FK2 and 53BP1  co-localization events between CX-5461 and vehicle exposures (Supplementary Figure~\ref{sfig:ub-signaling}b), the median increase of 63.59\% in FK2 foci that co-stain with 53BP1 in CX-5461-treated cells, as compared to 43\% in vehicle-treated cells, may still be biologically  relevant. 
+These findings demonstrate that CX-5461 mediated ubiquitination occurs at chromosome loci marked with DNA damage foci.
 
 We previously demonstrated that CX-5461-induced DNA damage is replication dependent\cite{Xu2017}. 
 To quantify the number of S-phase cells with FK2 foci, we employed 5-ethynyl-2'-deoxyuridine (EdU) incorporation into DNA during active DNA synthesis in U2OS cells. 
 We observed that after 1 hour of treatment with \SI{0,1}{\micro\Molar} CX-5461, almost all cells (99\%) with FK2 foci were EdU-positive (Figure ~\ref{fig:ubiquitin-signaling}c), suggesting that these cells are mostly in S-phase.
 
 We next assessed whether conjugated ubiquitin foci formation in response to CX-5461 exposure occurs at chromosomal G4 loci (Figure~\ref{fig:ubiquitin-signaling}d). 
-By using an engineered, G4 structure-specific antibody BG4\cite{Biffi2013b} in U2OS cells, we observed colocalization of FK2 and BG4 foci in 15\% of CX-5461-treated cells which is consistent with BG4 and 53BP1 colocalization observed with the previous study\cite{Xu2017}. 
+By using an engineered, G4 structure-specific antibody BG4\cite{Biffi2013b} in U2OS cells, we observed colocalization of FK2 and BG4 foci in 31.8\% of CX-5461-treated cells, as compared to 13.65\% of  vehicle-treated cells\cite{Xu2017}. 
 These findings suggest that conjugated ubiquitin accumulates at not only DNA damage sites but also at G4 structures upon exposure to G4 ligands.   
 
 \subsection{UBE2N-dependent K63-linked chromatin ubiquitination in response to CX-5461.}
 Having established that exposure to CX-5461 triggers DDR-associated UBE2N/RNF168-mediated chromatin ubiquitination, we next examined the chromatin modifications underlying the resolution of CX-5461-induced DNA damage. 
 UBE2N and RNF8 catalyze the formation of K63-linked ubiquitin chains on linker histone H1 flanking DNA DSBS which then recruits RNF168 to the site of damage\cite{Thorslund2015}. 
-We analyzed the induction of endogenous K63-linked ubiquitination after CX-5461 treatment in chromatin fractions isolated from HCT116 cells using Western blots (Figure~\ref{fig:chromatin-ubiquitination}a, middle panel, and Supplementary Figure~\ref{sfig:chromatin_ub_westerns}b). 
+We analyzed the induction of endogenous K63-linked ubiquitination after CX-5461 treatment in chromatin fractions isolated from HCT116 cells using Western blots (Figure~\ref{fig:chromatin-ubiquitination}a, middle panel, and Supplementary Figure~\ref{sfig:chromatin_ub_westerns}b and c). 
 The increase in K63-linked ubiquitination was observed 2 hours after drug treatment. 
 Loss of UBE2N reduced the accumulation of K63-linked ubiquitination (Figure~\ref{fig:chromatin-ubiquitination}a, Supplementary Figure~\ref{sfig:chromatin_ub_westerns}c). 
 To extend these observations, we additionally used U2OS cells with a stably integrated doxycyclin-inducible, green fluorescent protein (GFP)-tagged tandem ubiquitin-binding entity (K63-Super UIM) which has been shown to bind specifically to K63 linkages only\cite{Thorslund2015} (Figure~\ref{fig:chromatin-ubiquitination}c). 
@@ -142,6 +141,6 @@ Although several small-molecule covalent inhibitors of UBE2N have been developed
 This small-molecule inhibitor exhibits a cytotoxic effect on diffuse large B-cell lymphoma (DLBCL), neuroblastoma and malignant melanoma cells\cite{Pulvino2012,Cheng2014,Dikshit2018a}. 
 The effect of simultaneous combinations of CX-5461 and NSC697923 was examined in HCT116 cells using three-dimensional dose-response surface method\cite{Prichard1990,Prichard1993}. 
 To test a large range of drug doses, diagonal constant ratio combination design was used using equipotency ratios (e.g., CX-5461 IC$_{50}$ at 7.4 nM and NSC697923 IC$_{50}$ at 166.1 nM) so that the effect of each drug would be equal in the combination\cite{Chou2006}. 
-The combination of the two drugs showed synergistic response across a range of combinations in HCT116 cells treated for 4 days, with a peak at 1.9 nM of CX-5461 and 166.1 nM of NSC697923 (Figure~\ref{fig:drug-synergy}a, Supplemental Data). 
+The combination of the two drugs showed synergistic response across a range of combinations in HCT116 cells treated for 4 days, with a peak at 1.9 nM of CX-5461 and 166.1 nM of NSC697923 (Figure~\ref{fig:drug-synergy}a, Supplementary Data). 
 In addition, a strong synergy volume of 124.8 nM$^2$\% at 95\% CI) was observed (Figure~\ref{fig:drug-synergy}b, right panel). 
 On the other hand, the overall antagonism volume was insignificant at -1.62 nM$^2$\%.
